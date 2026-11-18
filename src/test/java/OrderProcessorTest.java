@@ -17,6 +17,6 @@ class OrderProcessorTest {
         assertThrows(IllegalArgumentException.class,
                 () -> OrderProcessor.createOrderJson("", "Nguyen Van A", 100000.0));
         assertThrows(IllegalArgumentException.class,
-                () -> OrderProcessor.createOrderJson("ORD-02", "Nguyen Van A", -500.0));
+                () ->  OrderProcessor.createOrderJson("ORD-02", "Nguyen Van A", -500.0));
     }
 }
